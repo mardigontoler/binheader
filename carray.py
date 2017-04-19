@@ -1,3 +1,5 @@
+#! /usr/bin/python3
+
 # convert a binary to a C array header file with the same file type
 
 import sys
@@ -31,8 +33,8 @@ def convert(filename):
     
 
 if __name__=='__main__':
-    if len(sys.argv) < 2:
-        print("Just gimme the file boi")
+    if len(sys.argv) !=  2:
+        print("Usage: python3 carray.py <fileName>")
     else:
         convert(sys.argv[1])
     
