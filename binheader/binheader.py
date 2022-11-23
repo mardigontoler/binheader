@@ -23,7 +23,7 @@ def convert(filename):
 
         for i,b in enumerate(contents):
             ending = '' if (i + 1) % perline != 0 else '\n        '
-            print(format(b,'0<#4X'), end = '',  file = output)
+            print("0x" + format(b, '02x'), end='', file=output)
             if i != len(contents) - 1:
                 print(', ', end = ending,  file = output)
 
